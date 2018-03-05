@@ -1,0 +1,40 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Book Antiqua";
+    /*background-image: url("back.jpg");
+    background-size: cover;*/
+}
+h1{
+    font-size: 15pt;
+    color: #20bc;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+p{
+    font-size: medium;
+    color: orangered;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+form{
+    margin-top: 0;
+}
+.submit{
+    background-color: darkcyan;
+    padding: 12px 45px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: #43a09d;
+}
