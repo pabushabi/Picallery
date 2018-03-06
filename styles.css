@@ -14,16 +14,6 @@ p{
     font-size: medium;
     color: orangered;
 }
-h2{
-    text-align: center;
-    font-weight: bolder;
-}
-h3{
-    text-align: center;
-}
-form{
-    margin-top: 0;
-}
 p.ins{
     font-family: Elephant;
     color: #334211;
@@ -45,4 +35,36 @@ p.del{
 p.strong{
     font-weight: bold;
     text-decoration: underline overline;
+}
+div.borders{
+    border: 5px solid red;
+    width: 300px;
+    height: 50px;
+}
+img.head{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+a.pic{
+    display: inline;
+    text-decoration: none;
+}
+a.link:hover{
+    /*style: cursor "not-allowed";*/
+    color: red;
+    text-decoration: none;
+}
+form{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+}
+img.gallery{
+    width: 216px;
+    height: 216px;
+}
+div.borders#1{
+    position: fixed;
+    left: 300px;
 }
