@@ -7,48 +7,37 @@ h1{
     font-size: 15pt;
     color: #20bc;
     text-align: center;
-    padding: 18px 0 18px 0;
-    margin: 0 0 10px 0;
+    position: relative;
+    top: 70px;
 }
 p{
     font-size: medium;
     color: orangered;
 }
-p.ins{
-    font-family: Elephant;
-    color: #334211;
-    font-size: medium;
-    text-align: right;
-    text-decoration: underline;
-}
-p.ss{
-    font-family: Jokerman;
-    color: black;
-}
-p.italic{
-    font-style: italic;
-    color: black;
-}
-p.del{
-    text-decoration: line-through;
-}
-p.strong{
-    font-weight: bold;
-    text-decoration: underline overline;
-}
-div.borders{
-    border: 5px solid red;
-    width: 300px;
-    height: 50px;
-}
 img.head{
     margin: 0;
     border: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+span.head{
+    position: fixed;
+    top: 7px;
+    left: 40px;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: "Segoe Script";
+    color: white;
+    z-index: 4;
 }
 a.pic{
     display: inline;
     text-decoration: none;
+    position: relative;
+    top: 90px;
 }
 a.link:hover{
     /*style: cursor "not-allowed";*/
@@ -57,14 +46,41 @@ a.link:hover{
 }
 form{
     position: fixed;
-    top: 40px;
+    top: 65px;
     right: 40px;
+    z-index: 3;
+}
+span.log{
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    z-index: 3;
+}
+button.log{
+    position: fixed;
+    top: 155px;
+    right: 90px;
+    z-index: 3;
 }
 img.gallery{
     width: 216px;
     height: 216px;
 }
-div.borders#1{
-    position: fixed;
-    left: 300px;
+div{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    left: 570px;
+    cursor: crosshair;
+}
+div.borders{
+    border: 5px solid red;
+    width: 300px;
+    height: 70px;
+}
+span.text{
+    position: relative;
+    top: 220px;
+    text-align: center;
+    cursor: help;
 }
