@@ -71,3 +71,5 @@ function mouseLeaveUp() {
     var pic = document.getElementById("up");
     pic.src = "resources/up.jpg";
 }
+
+
