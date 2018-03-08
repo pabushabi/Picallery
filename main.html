@@ -11,7 +11,7 @@
                 <!--<img class="head" src="resources/header.jpg">-->
             </a>
             <a href="#" class="header">
-                <span class="head" id="Picallery" onclick="hack()">Picallery</span>
+                <span class="head" id="Picallery" onclick="hack()" onmouseenter="mouseEnterHeader()" onmouseleave="mouseLeaveHeader()">Picallery</span>
             </a>
         </header>
 
@@ -35,13 +35,13 @@
             </a>
         </div>
 
-        <form title="Enter ur email & passwrd" name="logIn">
+        <form title="Enter ur email & passwrd" name="logIn" onsubmit="return validate()" autocomplete="on">
             <span class="log" id="login">Log in:<br></span>
-            <span>E-mail: <br></span>
-            <input title="email" type="email" name="E-mail"><br>
-            <span>Passwrd: <br></span>
-            <input title="passwrd" type="password" name="Password"><br>
-            <button class="log" onclick="logIn()">Confirm</button>
+            E-mail: <br>
+            <input title="email" type="email" name="E-mail" placeholder="email@domain.com" required><br>
+            Passwrd: <br>
+            <input title="passwrd" type="password" name="Password" placeholder="password" required><br>
+            <input class="log" type="submit" value="Log in" onclick="validate()">
         </form>
 
         <div class="borders">Внимание! На сервере ведутся технические работы. Сайт может рабетать некорректно.</div>
@@ -60,13 +60,13 @@
 
         <div class="up">
             <a href="#">
-                <img class="up" src="resources/up.jpg" onmouseenter="mouseEnterUp()" onmouseleave="mouseLeaveUp()" id="up">
+                <img class="up" src="resources/up.png" onmouseenter="mouseEnterUp()" onmouseleave="mouseLeaveUp()" id="up">
             </a>
         </div>
 
         <footer>
             <a href="https://www.vk.com/pabushabi">
-                <span class="foot" onmouseenter="mouseInFoot()" onmouseleave="mouseLeaveFoot()"> © 2018 pabushabi</span>
+                <span class="foot" onmouseenter="mouseEnterFoot()" onmouseleave="mouseLeaveFoot()"> © 2018 pabushabi</span>
             </a>
         </footer>
 

@@ -64,7 +64,6 @@ img.gallery{
     border-radius: 10px;
 }
 a.link:hover{
-    /*style: cursor "not-allowed";*/
     color: red;
     text-decoration: none;
 }
@@ -74,6 +73,7 @@ form{
     right: 40px;
     z-index: 3;
 }
+
 span.log{
     position: fixed;
     top: 50px;
