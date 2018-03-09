@@ -1,2 +1,3 @@
 # Picalery
-This is just testing of html+js+css
+It`s something like image gallery.
+I`m just learning of html+js+css
