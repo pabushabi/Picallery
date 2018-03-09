@@ -51,3 +51,9 @@ function mouseLeaveHeader() {
     /*var txt = document.getElementById("Picallery");
     txt.style.color = "white";*/
 }
+
+/*function scroll() {
+    var up = document.getElementById("up");
+    up.style.visibility = "visible";
+}*/
+
