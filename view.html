@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Просмотр изоброжений</title>
-        <link href="styles3.css" rel="stylesheet">
+        <link href="css/styles3.css" rel="stylesheet">
     </head>
 
     <body>
@@ -15,9 +15,9 @@
         <p class="msg">Просмотр изображений</p>
 
         <div class="gallery">
-            <span id="back">Назад</span>
+            <button onclick="prev()" id="back">Назад</button>
             <img id="pic" src="resources/1.jpg">
-            <span id="forward">Вперёд</span>
+            <button onclick="next()" id="forward">Вперёд</button>
         </div>
         <footer>
             <a href="https://www.vk.com/pabushabi">
@@ -25,6 +25,6 @@
             </a>
         </footer>
 
-        <script src="script1.js"></script>
+        <script src="js/script1.js"></script>
     </body>
 </html>
