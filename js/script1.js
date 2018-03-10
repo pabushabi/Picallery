@@ -1,12 +1,21 @@
 console.log("Hi^^");
 
+var flag = false;
+var textLogin = document.getElementById("login");
+var formInput = document.getElementById("form");
+var email = document.forms["logIn"]["E-mail"].value;
+var pass = document.forms["logIn"]["Password"].value;
+
+window.onload = function () {
+    if (flag) textLogin.innerHTML = "You r logged in as " + email;
+};
+
 function validate() {
-    var element = document.getElementById("login");
-    var email = document.forms["logIn"]["E-mail"].value;
-    var pass = document.forms["logIn"]["Password"].value;
     console.log(email);
     console.log(pass);
     //there should be sending l&p to server
+    textLogin.innerHTML = "You are logged in as " + email;
+    flag = true;
 }
 
 function hack() {
@@ -44,7 +53,7 @@ function mouseLeaveUp() {
 
 function mouseEnterHeader() {
     /*var txt = document.getElementById("Picallery");
-    txt.style.color = "white";*/
+    txt.style.textShadow = "3 px 3px 5px black";*/
 }
 
 function mouseLeaveHeader() {

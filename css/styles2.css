@@ -32,6 +32,11 @@ span.head{
     font-family: "Segoe Script";
     color: white;
     z-index: 4;
+    transition: transform 0.3s;
+}
+span.head:hover{
+    transform: scale(1.1, 1.1);
+    z-index: 5;
 }
 p.err{
     text-align: center;
@@ -59,6 +64,11 @@ p.back{
 }
 a:hover{
     text-decoration: underline;
+}
+svg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
 }
 span.foot{
     position: fixed;
