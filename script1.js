@@ -33,6 +33,15 @@ function mouseLeaveFoot() {
     pic[0].style.color = "black";
 }
 
+function openMenu() {
+    document.getElementById("dropdown").className = "visible";
+}
+
+window.onclick = function (event) {
+    if (!event.target.matches('.btn') )
+        document.getElementById("dropdown").className = "hidden";
+};
+
 /*function scroll() {
     var up = document.getElementById("up");
     up.style.visibility = "visible";

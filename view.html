@@ -29,6 +29,21 @@
                 </svg>
             </button>
         </div>
+
+        <div>
+            <div onclick="openMenu()" class="btn"><span id="splog">Log In</span></div>
+            <div id="dropdown" class="hidden">
+                <form title="Enter ur email & passwrd" name="logIn" onsubmit="return validate()" autocomplete="on">
+                    <span class="log" id="login">Log in:<br></span>
+                    E-mail: <br>
+                    <input class = "form" title="email" type="email" name="email" placeholder="email@domain.com" required><br>
+                    Passwrd: <br>
+                    <input class = "form" title="password" type="password" name="password" placeholder="password" required><br>
+                    <input class = "button" type="submit" value="Log in" onclick="validate()">
+                </form>
+            </div>
+        </div>
+
         <footer>
             <a href="https://www.vk.com/pabushabi">
                 <span class="foot" onmouseenter="mouseInFoot()" onmouseleave="mouseLeaveFoot()"> © 2018 pabushabi</span>
