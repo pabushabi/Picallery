@@ -57,8 +57,16 @@ div{
 }
 #forward{
     position: fixed;
-    right: 100px;
+    left: 1350px;
     top: 50%;
+}
+
+svg:hover{
+    transform: scale(1.2, 1.2);
+    z-index: 5;
+}
+#cir:hover{
+    fill: #9ba5a8;
 }
 
 .bt{
@@ -83,6 +91,7 @@ div{
     position: fixed;
     top: 15px;
     right: 14.5%;
+    color: white;
 }
 
 .btn:hover{

@@ -42,11 +42,6 @@ window.onclick = function (event) {
         document.getElementById("dropdown").className = "hidden";
 };
 
-/*function scroll() {
-    var up = document.getElementById("up");
-    up.style.visibility = "visible";
-}*/
-
 var images = [
     "resources/1.jpg",
     "resources/2.jpg",

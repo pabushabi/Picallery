@@ -81,6 +81,7 @@ svg{
     position: fixed;
     top: 15px;
     right: 14.5%;
+    color: white;
 }
 
 .btn:hover{

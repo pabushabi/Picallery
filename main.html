@@ -8,9 +8,6 @@
     <body>                                                          /*1500x750*/
         <header id="header">
             <a href="#" class="header">
-                <!--<img class="head" src="resources/header.jpg">-->
-            </a>
-            <a href="#" class="header">
                 <span class="head" id="Picallery">Picallery</span>
             </a>
         </header>
@@ -20,7 +17,7 @@
             <div id="dropdown" class="hidden">
                 <form title="Enter ur email & passwrd" name="logIn" onsubmit="return validate()" autocomplete="on">
                     E-mail: <br>
-                    <input class = "form" title="email" type="email" name="email" placeholder="email@domain.com" required><br>
+                    <input class = "form" title="email" type="email" name="email" placeholder="email@domain.com" autofocus required><br>
                     Passwrd: <br>
                     <input class = "form" title="password" type="password" name="password" placeholder="password" required><br>
                     <input class = "button" type="submit" value="Log in" onclick="validate()">
@@ -32,7 +29,7 @@
         <h1><a href="404.html" class="link">Галерея изображений</a></h1>
 
         <div class="galleryMain">
-            <a href="#" class="pic">
+            <a href="view.html" class="pic">
                 <img align="center" class="gallery" src="resources/1.jpg" alt="DO NOT TRUST ROBOTS" onclick="resize()">
             </a>
             <a href="view.html" class="pic">
@@ -67,10 +64,9 @@
 
         <div class="up">
             <a href="#">
-                <!--<img class="up" src="resources/up.png" onscroll="scroll()" onmouseenter="mouseEnterUp()" onmouseleave="mouseLeaveUp()" id="up">-->
                 <svg width="40" height="40">
                     <circle id="cir" cx="20" cy="20" r="20" fill="#d4dcde"></circle>
-                    <polyline style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:4; fill:none" points="10 23, 20 13, 30 23"></polyline>
+                    <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:4; fill:none" points="10 23, 20 13, 30 23"></polyline>
                 </svg>
             </a>
         </div>

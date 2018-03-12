@@ -102,6 +102,7 @@ a.link:hover{
     position: fixed;
     top: 15px;
     right: 13.5%;
+    color: white;
 }
 
 .btn:hover{
@@ -154,15 +155,18 @@ div.text{
     left: 20%; /*300px*/
     width: 60%; /*900px*/
     max-width: 80%;
-    min-height: 1020px;
+    /*min-height: 720px;*/
     display: block;
 }
 .text{
+    padding: 2px;
     position: relative;
     cursor: default;
     word-spacing: 2px;
     text-align: justify;
     word-wrap: break-word;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgrey;
 }
 div.up{
     position: fixed;
@@ -177,9 +181,11 @@ svg:hover{
     transform: scale(1.2, 1.2);
     z-index: 5;
 }
+
 #cir:hover{
     fill: #9ba5a8;
 }
+
 span.foot{
     position: fixed;
     bottom: 7px;
