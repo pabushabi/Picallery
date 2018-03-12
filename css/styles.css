@@ -79,13 +79,20 @@ a.link:hover{
     color: red;
     text-decoration: none;
 }
+
+.bt{
+    position: absolute;
+    left: 80%;
+    top: 0;
+}
+
 .btn{
     background-color: #7092bf;
     color: black;
     width: 150px;
     height: 50px;
-    position: absolute;
-    right: 10px;
+    position: fixed;
+    /*right: 10px;*/
     top: 0;
     z-index: 5;
     cursor: pointer;
@@ -103,7 +110,7 @@ a.link:hover{
 }
 
 #dropdown{
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 10%;
     background-color: white;
@@ -124,14 +131,12 @@ a.link:hover{
     display: none;
 }
 
-div{
+div.borders{
     text-align: center;
     position: relative;
     top: 170px;
     left: 39%;
     cursor: default;
-}
-div.borders{
     border: 5px solid red;
     border-radius: 10px;
     width: 300px;
