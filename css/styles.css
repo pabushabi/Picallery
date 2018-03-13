@@ -74,6 +74,7 @@ img.gallery{
 img.gallery:hover{
     transform: scale(1.2, 1.2);
     z-index: 5;
+    position: relative;
 }
 a.link:hover{
     color: red;

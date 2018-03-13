@@ -38,7 +38,7 @@ function openMenu() {
 }
 
 window.onclick = function (event) {
-    if (!event.target.matches('.btn') )
+    if (!event.target.matches('.btn', '.form', '.button'))
         document.getElementById("dropdown").className = "hidden";
 };
 
