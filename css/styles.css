@@ -144,6 +144,7 @@ div.borders{
     width: 300px;
     height: 70px;
     transition: width 3s, left 3s, border 3s;
+    box-shadow: 2px 2px 7px 0.1px rgba(0, 0, 0, 0.2);
 }
 div.borders:hover{
     width: 350px;
@@ -158,6 +159,8 @@ div.text{
     max-width: 80%;
     /*min-height: 720px;*/
     display: block;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgrey;
 }
 .text{
     padding: 2px;
@@ -166,8 +169,6 @@ div.text{
     word-spacing: 2px;
     text-align: justify;
     word-wrap: break-word;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgrey;
 }
 div.up{
     position: fixed;
@@ -177,6 +178,8 @@ div.up{
 }
 svg{
     transition: transform 0.3s;
+    border-radius: 50%;
+    box-shadow: 2px 2px 7px 0.1px rgba(0, 0, 0, 0.2);
 }
 svg:hover{
     transform: scale(1.2, 1.2);
