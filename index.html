@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
-<body>                                                          /*1500x750*/
+<body>
 <header id="header">
     <a href="#">
         <img id="logo" src="resources/pano.svg">
@@ -24,11 +24,11 @@
         <svg id="arrow" width="40" height="40">
             <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:2px; fill:white" points="10 17, 17 10, 24 17, 10 17"></polyline>
         </svg>
-        <form title="Enter ur email & passwrd" name="logIn" autocomplete="on">
+        <form name="logIn" autocomplete="on">
             E-mail: <br>
-            <input class = "form" title="email" type="email" name="email" id="mail" placeholder="email@domain.com" autofocus required><br>
-            Passwrd: <br>
-            <input class = "form" title="password" type="password" name="password" id="pass" placeholder="password" required><br>
+            <input class = "form" type="email" name="email" id="mail" placeholder="email@domain.com" autofocus required><br>
+            Password: <br>
+            <input class = "form" type="password" name="password" id="pass" placeholder="qwerty123" required><br>
             <input class = "button" type="button" value="Log in" onclick="validate()">
         </form>
     </div>
@@ -73,7 +73,7 @@
 
 <div id="up">
     <svg id="control" width="40" height="40">
-        <circle id="cir" cx="20" cy="20" r="20" fill="rgb(233, 30, 99)"></circle>
+        <circle id="cir" cx="20" cy="20" r="20" fill="rgba(233, 30, 99, 0.8)"></circle>
         <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:4px; fill:none" points="10 23, 20 13, 30 23"></polyline>
     </svg>
 </div>

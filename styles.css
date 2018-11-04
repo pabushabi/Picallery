@@ -16,7 +16,7 @@
     background-color: rgb(63, 81, 181);
     width: 100%;
     height: 55px;
-    box-shadow: 3px 3px 10px 0.1px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 10px 0.1px rgba(27, 31, 35, 0.3);
 }
 #logo{
     filter: invert(100%);
@@ -48,10 +48,11 @@
     width: 393px;
     height: 262px;
     border-radius: 1px;
-    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 5px 1px rgba(27, 31, 35, 0.25);
     z-index: 4;
     object-fit: cover;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 .gallery:hover{
     animation-name: bright;
@@ -59,6 +60,7 @@
     filter: brightness(70%);
     transform: scale(1.05, 1.05);
     z-index: 4;
+    cursor: zoom-in;
 }
 @keyframes bright {
     0% {filter: brightness(100%)}
@@ -158,6 +160,7 @@
     z-index: 5;
     animation-name: slide-down;
     animation-duration: 0.4s;
+    cursor: auto;
 }
 @keyframes slide-down {
     0% {top: 0; opacity: 0}
@@ -190,34 +193,31 @@ div#up{
 svg#control{
     transition: transform 0.3s;
     border-radius: 50%;
-    box-shadow: 2px 2px 7px 0.1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 7px 0.1px rgba(27, 31, 35, 0.2);
+    cursor: pointer;
 }
 svg#control:hover{
     transform: scale(1.1, 1.1);
     z-index: 5;
 }
-p.err{
+p#err{
     text-align: center;
     font-size: 2em;
     font-weight: 400;
     position: fixed;
     top: 40%;
-    left: 40%;
+    width: 100%;
 }
-p{
+p#back{
     text-align: center;
     position: fixed;
-    top: 50%;
-    left: 50.5%;
-}
-p.back{
-    position: fixed;
     top: 60%;
-    left: 49%;
+    width: 100%;
+    font-size: 1.3em;
 }
-p{
-    position: fixed;
-    top: 7%;
-    left: 42%;
-    font-size: 1.5em;
+a{
+    text-decoration: none;
+}
+a:link, a:hover, a:visited, a:active{
+    color: rgba(233, 30, 99, 0.8);
 }

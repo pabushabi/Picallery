@@ -22,18 +22,18 @@
             <svg id="arrow" width="40" height="40">
                 <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:2px; fill:white" points="10 17, 17 10, 24 17, 10 17"></polyline>
             </svg>
-            <form title="Enter ur email & passwrd" name="logIn" autocomplete="on">
+            <form name="logIn" autocomplete="on">
                 E-mail: <br>
-                <input class = "form" title="email" type="email" name="email" id="mail" placeholder="email@domain.com" autofocus required><br>
-                Passwrd: <br>
-                <input class = "form" title="password" type="password" name="password" id="pass" placeholder="password" required><br>
+                <input class = "form" type="email" name="email" id="mail" placeholder="email@domain.com" autofocus required><br>
+                Password: <br>
+                <input class = "form" type="password" name="password" id="pass" placeholder="qwerty123" required><br>
                 <input class = "button" type="button" value="Log in" onclick="validate()">
             </form>
         </div>
     </div>
 </header>
-    <p class="err">404 Page not found! :(</p>
-    <a href="index.html"><p class="back">Назад</p></a>
+    <p id="err">404 Page not found! :(</p>
+    <p id="back"><a id="a_back" href="index.html">Назад</a></p>
 
     <script src="script.js"></script>
 </body>
