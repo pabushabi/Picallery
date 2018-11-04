@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page not found</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#">
+        <img id="logo" src="resources/pano.svg">
+    </a>
+    <a href="index.html" class="header">
+        <span class="head">Picallery</span>
+    </a>
+    <div id="bt">
+        <span id="splog"> </span>
+        <div id="bck" style="display: none"></div>
+        <div id="dropdown" style="display: none">
+            <svg id="arrow" width="40" height="40">
+                <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:2px; fill:white" points="10 17, 17 10, 24 17, 10 17"></polyline>
+            </svg>
+            <form title="Enter ur email & passwrd" name="logIn" autocomplete="on">
+                E-mail: <br>
+                <input class = "form" title="email" type="email" name="email" id="mail" placeholder="email@domain.com" autofocus required><br>
+                Passwrd: <br>
+                <input class = "form" title="password" type="password" name="password" id="pass" placeholder="password" required><br>
+                <input class = "button" type="button" value="Log in" onclick="validate()">
+            </form>
+        </div>
+    </div>
+</header>
+    <p class="err">404 Page not found! :(</p>
+    <a href="index.html"><p class="back">Назад</p></a>
+
+    <script src="script.js"></script>
+</body>
+</html>

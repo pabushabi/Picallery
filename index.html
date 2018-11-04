@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <title id="title">Picallery</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>                                                          /*1500x750*/
+<header id="header">
+    <a href="#">
+        <img id="logo" src="resources/pano.svg">
+    </a>
+    <a href="404.html" class="header">
+        <span class="head" id="Picallery">Picallery</span>
+    </a>
+
+<div id="bt">
+    <span id="splog"> </span>
+    <div id="bck" style="display: none"></div>
+    <div id="dropdown" style="display: none">
+        <svg id="arrow" width="40" height="40">
+            <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:2px; fill:white" points="10 17, 17 10, 24 17, 10 17"></polyline>
+        </svg>
+        <form title="Enter ur email & passwrd" name="logIn" autocomplete="on">
+            E-mail: <br>
+            <input class = "form" title="email" type="email" name="email" id="mail" placeholder="email@domain.com" autofocus required><br>
+            Passwrd: <br>
+            <input class = "form" title="password" type="password" name="password" id="pass" placeholder="password" required><br>
+            <input class = "button" type="button" value="Log in" onclick="validate()">
+        </form>
+    </div>
+</div>
+</header>
+
+<div id="backgrd" style="display: none">
+    <div id="big_pic" style="display: none">
+        <svg id="close" width="20" height="20">
+            <polyline style="stroke-linejoin: round; stroke-linecap: round; stroke: black; stroke-width: 2px; fill: none" points="0 0, 20 20"></polyline>
+            <polyline style="stroke-linejoin: round; stroke-linecap: round; stroke: black; stroke-width: 2px; fill: none" points="0 20, 20 0"></polyline>
+        </svg>
+        <h1 id="big_h">Pic</h1>
+        <img id="img_res">
+    </div>
+</div>
+
+<div class="galleryMain">
+    <img class="gallery" src="resources/1.jpg">
+    <img class="gallery" src="resources/2.jpg">
+    <img class="gallery" src="resources/3.jpg">
+    <img class="gallery" src="resources/4.jpg">
+    <img class="gallery" src="resources/5.jpg">
+    <img class="gallery" src="resources/6.jpg">
+    <img class="gallery" src="resources/7.jpg">
+    <img class="gallery" src="resources/8.jpg">
+    <img class="gallery" src="resources/9.jpg">
+    <img class="gallery" src="resources/10.jpg">
+    <img class="gallery" src="resources/11.jpg">
+    <img class="gallery" src="resources/12.jpg">
+    <img class="gallery" src="resources/13.jpg">
+    <img class="gallery" src="resources/14.jpg">
+    <img class="gallery" src="resources/15.jpg">
+    <img class="gallery" src="resources/16.jpg">
+    <img class="gallery" src="resources/17.jpg">
+    <img class="gallery" src="resources/18.jpg">
+    <img class="gallery" src="resources/19.jpg">
+    <img class="gallery" src="resources/20.jpg">
+</div>
+
+<img id="full" src="resources/fullscreen.svg" style="display: none">
+
+<div id="up">
+    <svg id="control" width="40" height="40">
+        <circle id="cir" cx="20" cy="20" r="20" fill="rgb(233, 30, 99)"></circle>
+        <polyline id="poly" style="stroke-linejoin:round; stroke-linecap:round; stroke:white; stroke-width:4px; fill:none" points="10 23, 20 13, 30 23"></polyline>
+    </svg>
+</div>
+
+    <script src = script.js></script>
+</body>
+
+</html>
