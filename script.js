@@ -7,16 +7,12 @@ $("#splog").html(log_);
 var email = document.getElementById("mail");
 var pass = document.getElementById("pass");
 
-(function () {
-    if (flag) $("#splog").html(log_);
-})();
-
 function validate() {
     console.log(email.value);
     console.log(pass.value);
     //there should be sending l&p to server
     log_ = "You are logged in as " + email.value;
-    flag = true;
+    $("#splog").html(log_);
 }
 var dd = document.getElementById("dropdown");
 var bck = document.getElementById("bck");
