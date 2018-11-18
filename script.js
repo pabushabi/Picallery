@@ -1,11 +1,22 @@
 "use strict";
 console.log("Hi^^");
 
-var log_ = "Log In";
-var flag = false;
+(function () {
+    let galleryMain = document.getElementsByClassName('galleryMain');
+    for (let i = 0; i < 20; i++){
+        let img = document.createElement('img');
+        img.className = 'gallery';
+        img.id = i+1;
+        img.src = 'resources/' + (i+1) + '.jpg';
+        galleryMain[0].appendChild(img);
+    }
+})();
+
+let log_ = "Log In";
+const flag = false;
 $("#splog").html(log_);
-var email = document.getElementById("mail");
-var pass = document.getElementById("pass");
+const email = document.getElementById("mail");
+const pass = document.getElementById("pass");
 
 function validate() {
     console.log(email.value);
@@ -14,9 +25,10 @@ function validate() {
     log_ = "You are logged in as " + email.value;
     $("#splog").html(log_);
 }
-var dd = document.getElementById("dropdown");
-var bck = document.getElementById("bck");
-var bt = document.getElementById("bt");
+
+const dd = document.getElementById("dropdown");
+const bck = document.getElementById("bck");
+const bt = document.getElementById("bt");
 bt.addEventListener("click", function () {
     dd.style.display = "block";
     bck.style.display = "block"
@@ -28,26 +40,24 @@ bck.addEventListener("click", function (e) {
     bck.style.display = "none";
 });
 
-var scroll_u = document.getElementById("up");
+const scroll_u = document.getElementById("up");
 scroll_u.addEventListener("click", function (e) {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
-var backgrd = document.getElementById("backgrd");
-var big = document.getElementById("big_pic");
-var pic = document.getElementsByClassName("gallery");
-var close = document.getElementById("close");
-var img = document.getElementById("img_res");
-var i = 1;
+const backgrd = document.getElementById("backgrd");
+const big = document.getElementById("big_pic");
+const pic = document.getElementsByClassName("gallery");
+const close = document.getElementById("close");
+const img = document.getElementById("img_res");
 
 [].forEach.call(pic, function (el) {
     el.addEventListener("click", function (e) {
-        i++;
         backgrd.style.display = "block";
         big.style.display = "block";
-        img.src = "resources/" + (i - 1) + ".jpg"
+        img.src = "resources/" + e.target.id + ".jpg"
     });
 });
 
