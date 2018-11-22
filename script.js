@@ -1,17 +1,6 @@
 "use strict";
 console.log("Hi^^");
 
-(function () {
-    let galleryMain = document.getElementsByClassName('galleryMain');
-    for (let i = 0; i < 20; i++){
-        let img = document.createElement('img');
-        img.className = 'gallery';
-        img.id = i+1;
-        img.src = 'resources/' + (i+1) + '.jpg';
-        galleryMain[0].appendChild(img);
-    }
-})();
-
 let log_ = "Log In";
 const flag = false;
 $("#splog").html(log_);
@@ -39,6 +28,17 @@ bck.addEventListener("click", function (e) {
     dd.style.display = "none";
     bck.style.display = "none";
 });
+
+(function () {
+    let galleryMain = document.getElementsByClassName('galleryMain');
+    for (let i = 0; i < 20; i++){
+        let img = document.createElement('img');
+        img.className = 'gallery';
+        img.id = i+1;
+        img.src = 'resources/' + (i+1) + '.jpg';
+        galleryMain[0].appendChild(img);
+    }
+})();
 
 const scroll_u = document.getElementById("up");
 scroll_u.addEventListener("click", function (e) {
